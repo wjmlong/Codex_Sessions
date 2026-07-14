@@ -1,6 +1,6 @@
 [CmdletBinding()]
 param(
-    [string]$ToolkitDirectory = (Join-Path $env:USERPROFILE "codex-session-toolkit"),
+    [string]$ToolkitDirectory = "C:\cst",
     [string]$RepositoryUrl = "https://github.com/wjmlong/Codex_Sessions.git",
     [string]$ProxyUrl = ""
 )
@@ -38,8 +38,12 @@ if (-not (Test-Path -LiteralPath $ToolkitDirectory)) {
     }
 }
 
+$previousErrorActionPreference = $ErrorActionPreference
+$ErrorActionPreference = "Continue"
 git -C $ToolkitDirectory apply --reverse --check $patchFile *> $null
-if ($LASTEXITCODE -ne 0) {
+$patchAlreadyApplied = $LASTEXITCODE -eq 0
+$ErrorActionPreference = $previousErrorActionPreference
+if (-not $patchAlreadyApplied) {
     git -C $ToolkitDirectory apply --check $patchFile
     if ($LASTEXITCODE -ne 0) {
         throw "The compatibility patch does not apply to this Toolkit version."
@@ -57,26 +61,37 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 $toolkit = Join-Path $ToolkitDirectory ".venv\Scripts\codex-session-toolkit.cmd"
-& $toolkit connect-github $RepositoryUrl --branch main
-if ($LASTEXITCODE -ne 0) {
-    throw "Failed to connect the bundle repository."
-}
-
-if ($ProxyUrl) {
-    & $toolkit github-proxy $ProxyUrl
+Push-Location $ToolkitDirectory
+try {
+    & $toolkit connect-github $RepositoryUrl --branch main
     if ($LASTEXITCODE -ne 0) {
-        throw "Failed to configure the Toolkit GitHub proxy."
+        throw "Failed to connect the bundle repository."
     }
-}
 
-& $toolkit pull-github --branch main
-if ($LASTEXITCODE -ne 0) {
-    throw "Failed to pull Codex bundles."
-}
+    $bundleRepository = Join-Path $ToolkitDirectory "codex_bundles"
+    git -C $bundleRepository config --local core.longpaths true
+    if ($LASTEXITCODE -ne 0) {
+        throw "Failed to enable long Windows paths for the bundle repository."
+    }
 
-& $toolkit validate-bundles
-if ($LASTEXITCODE -ne 0) {
-    throw "Bundle validation failed."
+    if ($ProxyUrl) {
+        & $toolkit github-proxy $ProxyUrl
+        if ($LASTEXITCODE -ne 0) {
+            throw "Failed to configure the Toolkit GitHub proxy."
+        }
+    }
+
+    & $toolkit pull-github --branch main
+    if ($LASTEXITCODE -ne 0) {
+        throw "Failed to pull Codex bundles."
+    }
+
+    & $toolkit validate-bundles
+    if ($LASTEXITCODE -ne 0) {
+        throw "Bundle validation failed."
+    }
+} finally {
+    Pop-Location
 }
 
 Write-Host "Toolkit setup complete. Start it with:"

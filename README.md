@@ -4,6 +4,8 @@ Codex Desktop session bundles synchronized with [Codex Session Toolkit](https://
 
 The repository currently contains 33 validated Desktop session bundles exported from `LAPTOP-2GMBRRQA`.
 
+Browse the sessions by project and readable title in [SESSION_CATALOG.md](SESSION_CATALOG.md). Imported Codex sidebar titles use the format `[项目名] 对话名`.
+
 ## Source device
 
 Toolkit is installed at:
@@ -17,6 +19,7 @@ Export and push the latest sessions:
 ```powershell
 cd C:\Users\kiki\codex-session-toolkit
 .\.venv\Scripts\codex-session-toolkit.cmd export-desktop-all --skills-mode skip
+python C:\Users\kiki\Codex_Sessions\scripts\refresh-session-catalog.py
 .\.venv\Scripts\codex-session-toolkit.cmd validate-bundles
 .\.venv\Scripts\codex-session-toolkit.cmd sync-github --branch main --message "Sync Codex session bundles"
 ```

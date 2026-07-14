@@ -1,0 +1,299 @@
+[
+  {
+    "id": "019f13b1-098e-7182-ad29-f1809a0e39f4",
+    "project": "Daily Stock Analysis",
+    "title": "配置本地软件与数据源",
+    "display_title": "[Daily Stock Analysis] 配置本地软件与数据源",
+    "cwd": "D:\\daily-stock-analysis-windows-noinstall-v3.24.1\\win-unpacked",
+    "updated_at": "2026-06-29T15:32:55.107Z",
+    "bundle": "LAPTOP-2GMBRRQA/sessions/desktop/20260714-070700-755307/019f13b1-098e-7182-ad29-f1809a0e39f4"
+  },
+  {
+    "id": "019f1879-a70f-72b0-83f3-cef657719156",
+    "project": "Daily Stock Analysis",
+    "title": "卸载 Edge 并清除记录",
+    "display_title": "[Daily Stock Analysis] 卸载 Edge 并清除记录",
+    "cwd": "D:\\daily-stock-analysis-windows-noinstall-v3.24.1\\win-unpacked",
+    "updated_at": "2026-06-30T12:31:19.793Z",
+    "bundle": "LAPTOP-2GMBRRQA/sessions/desktop/20260714-070700-755307/019f1879-a70f-72b0-83f3-cef657719156"
+  },
+  {
+    "id": "019f41c1-b45b-7fc0-bf80-8f270e194318",
+    "project": "ReHealth GitHub 评估",
+    "title": "规划 ReHealth Android 真实数据 MVP",
+    "display_title": "[ReHealth GitHub 评估] 规划 ReHealth Android 真实数据 MVP",
+    "cwd": "C:\\Users\\kiki\\Documents\\Codex\\2026-07-08\\github-app-connector-76869538009648d5b282a4bb21c3d157-rehealthai-rehealth",
+    "updated_at": "2026-07-09T01:28:07.322Z",
+    "bundle": "LAPTOP-2GMBRRQA/sessions/desktop/20260714-070700-755307/019f41c1-b45b-7fc0-bf80-8f270e194318"
+  },
+  {
+    "id": "019f41c4-09b9-7063-9829-00e90fc62b22",
+    "project": "ReHealth GitHub 评估",
+    "title": "分析核心算法仓库接入",
+    "display_title": "[ReHealth GitHub 评估] 分析核心算法仓库接入",
+    "cwd": "C:\\Users\\kiki\\Documents\\Codex\\2026-07-08\\github-app-connector-76869538009648d5b282a4bb21c3d157-rehealthai-rehealth",
+    "updated_at": "2026-07-08T12:55:54.164Z",
+    "bundle": "LAPTOP-2GMBRRQA/sessions/desktop/20260714-070700-755307/019f41c4-09b9-7063-9829-00e90fc62b22"
+  },
+  {
+    "id": "019f41c4-398f-70d3-ae78-e9f3c05d8a58",
+    "project": "ReHealth GitHub 评估",
+    "title": "评估 ReHealth 后端仓库",
+    "display_title": "[ReHealth GitHub 评估] 评估 ReHealth 后端仓库",
+    "cwd": "C:\\Users\\kiki\\Documents\\Codex\\2026-07-08\\github-app-connector-76869538009648d5b282a4bb21c3d157-rehealthai-rehealth",
+    "updated_at": "2026-07-08T12:52:48.678Z",
+    "bundle": "LAPTOP-2GMBRRQA/sessions/desktop/20260714-070700-755307/019f41c4-398f-70d3-ae78-e9f3c05d8a58"
+  },
+  {
+    "id": "019f41c4-547d-7031-b6de-60146f7ae2c1",
+    "project": "ReHealth GitHub 评估",
+    "title": "评估 Android 工程与测试方案",
+    "display_title": "[ReHealth GitHub 评估] 评估 Android 工程与测试方案",
+    "cwd": "C:\\Users\\kiki\\Documents\\Codex\\2026-07-08\\github-app-connector-76869538009648d5b282a4bb21c3d157-rehealthai-rehealth",
+    "updated_at": "2026-07-08T12:53:16.474Z",
+    "bundle": "LAPTOP-2GMBRRQA/sessions/desktop/20260714-070700-755307/019f41c4-547d-7031-b6de-60146f7ae2c1"
+  },
+  {
+    "id": "019f448f-c0b2-7890-bba5-5abd719c14eb",
+    "project": "ReHealth AI",
+    "title": "评估 ReHealth Android MVP 工程",
+    "display_title": "[ReHealth AI] 评估 ReHealth Android MVP 工程",
+    "cwd": "D:\\rehealthAI",
+    "updated_at": "2026-07-09T15:19:56.486Z",
+    "bundle": "LAPTOP-2GMBRRQA/sessions/desktop/20260714-070700-755307/019f448f-c0b2-7890-bba5-5abd719c14eb"
+  },
+  {
+    "id": "019f44a7-5730-79d1-becd-a54f593b62f7",
+    "project": "ReHealth AI",
+    "title": "检查 Android 构建健康",
+    "display_title": "[ReHealth AI] 检查 Android 构建健康",
+    "cwd": "D:\\rehealthAI",
+    "updated_at": "2026-07-09T02:29:05.758Z",
+    "bundle": "LAPTOP-2GMBRRQA/sessions/desktop/20260714-070700-755307/019f44a7-5730-79d1-becd-a54f593b62f7"
+  },
+  {
+    "id": "019f44df-d968-7930-88f7-dd4d1f782dce",
+    "project": "ReHealth AI",
+    "title": "实现 Android 特征提取器",
+    "display_title": "[ReHealth AI] 实现 Android 特征提取器",
+    "cwd": "D:\\rehealthAI",
+    "updated_at": "2026-07-09T03:31:20.627Z",
+    "bundle": "LAPTOP-2GMBRRQA/sessions/desktop/20260714-070700-755307/019f44df-d968-7930-88f7-dd4d1f782dce"
+  },
+  {
+    "id": "019f44fa-f33e-7ef0-bcc2-10065c399c5c",
+    "project": "ReHealth AI",
+    "title": "接入模型服务 F1",
+    "display_title": "[ReHealth AI] 接入模型服务 F1",
+    "cwd": "D:\\rehealthAI",
+    "updated_at": "2026-07-13T04:17:56.959Z",
+    "bundle": "LAPTOP-2GMBRRQA/sessions/desktop/20260714-070700-755307/019f44fa-f33e-7ef0-bcc2-10065c399c5c"
+  },
+  {
+    "id": "019f45b3-cd47-7671-a0bc-6e43c317840b",
+    "project": "Codex 本机配置",
+    "title": "修复 ZCODE extra_body 参数错误",
+    "display_title": "[Codex 本机配置] 修复 ZCODE extra_body 参数错误",
+    "cwd": "C:\\Users\\kiki",
+    "updated_at": "2026-07-09T07:19:22.325Z",
+    "bundle": "LAPTOP-2GMBRRQA/sessions/desktop/20260714-070700-755307/019f45b3-cd47-7671-a0bc-6e43c317840b"
+  },
+  {
+    "id": "019f45d8-196a-7252-84dd-10502ad9328a",
+    "project": "ReHealth AI",
+    "title": "后端模块选型与数据库拆分",
+    "display_title": "[ReHealth AI] 后端模块选型与数据库拆分",
+    "cwd": "D:\\rehealthAI",
+    "updated_at": "2026-07-13T08:42:18.321Z",
+    "bundle": "LAPTOP-2GMBRRQA/sessions/desktop/20260714-070700-755307/019f45d8-196a-7252-84dd-10502ad9328a"
+  },
+  {
+    "id": "019f46d4-7745-7a40-ae3e-95c1560e6f84",
+    "project": "ReHealth AI",
+    "title": "实现 Android BLE 后台采集",
+    "display_title": "[ReHealth AI] 实现 Android BLE 后台采集",
+    "cwd": "D:\\rehealthAI",
+    "updated_at": "2026-07-09T16:56:15.977Z",
+    "bundle": "LAPTOP-2GMBRRQA/sessions/desktop/20260714-070700-755307/019f46d4-7745-7a40-ae3e-95c1560e6f84"
+  },
+  {
+    "id": "019f46e8-8001-7613-8282-639bfb328878",
+    "project": "ReHealth AI",
+    "title": "QA 发布验收",
+    "display_title": "[ReHealth AI] QA 发布验收",
+    "cwd": "D:\\rehealthAI",
+    "updated_at": "2026-07-09T13:39:58.883Z",
+    "bundle": "LAPTOP-2GMBRRQA/sessions/desktop/20260714-070700-755307/019f46e8-8001-7613-8282-639bfb328878"
+  },
+  {
+    "id": "019f4738-2c68-7751-af4c-6a2b7ca3dc38",
+    "project": "ReHealth AI",
+    "title": "修复 D1 状态与工程一致性",
+    "display_title": "[ReHealth AI] 修复 D1 状态与工程一致性",
+    "cwd": "D:\\rehealthAI",
+    "updated_at": "2026-07-09T14:20:18.672Z",
+    "bundle": "LAPTOP-2GMBRRQA/sessions/desktop/20260714-070700-755307/019f4738-2c68-7751-af4c-6a2b7ca3dc38"
+  },
+  {
+    "id": "019f473d-6f4c-74b3-b32a-408bc02b4b8f",
+    "project": "ReHealth AI",
+    "title": "ReHealth MVP 工程总评估",
+    "display_title": "[ReHealth AI] ReHealth MVP 工程总评估",
+    "cwd": "D:\\rehealthAI",
+    "updated_at": "2026-07-13T15:54:48.442Z",
+    "bundle": "LAPTOP-2GMBRRQA/sessions/desktop/20260714-070700-755307/019f473d-6f4c-74b3-b32a-408bc02b4b8f"
+  },
+  {
+    "id": "019f475c-967b-7cf0-99ed-accbafde5d71",
+    "project": "ReHealth AI",
+    "title": "接入 Android 标准风险 UI 路径",
+    "display_title": "[ReHealth AI] 接入 Android 标准风险 UI 路径",
+    "cwd": "D:\\rehealthAI",
+    "updated_at": "2026-07-09T15:04:38.880Z",
+    "bundle": "LAPTOP-2GMBRRQA/sessions/desktop/20260714-070700-755307/019f475c-967b-7cf0-99ed-accbafde5d71"
+  },
+  {
+    "id": "019f476e-76d6-77b3-835b-342731dda418",
+    "project": "ReHealth AI",
+    "title": "下线后端遗留路径",
+    "display_title": "[ReHealth AI] 下线后端遗留路径",
+    "cwd": "D:\\rehealthAI",
+    "updated_at": "2026-07-09T15:19:04.777Z",
+    "bundle": "LAPTOP-2GMBRRQA/sessions/desktop/20260714-070700-755307/019f476e-76d6-77b3-835b-342731dda418"
+  },
+  {
+    "id": "019f595c-03fa-76e1-aaa2-d7ee7476e825",
+    "project": "ReHealth AI",
+    "title": "审计F3与PIAS可验收需求",
+    "display_title": "[ReHealth AI] 审计F3与PIAS可验收需求",
+    "cwd": "D:\\rehealthAI",
+    "updated_at": "2026-07-13T02:48:14.976Z",
+    "bundle": "LAPTOP-2GMBRRQA/sessions/desktop/20260714-070700-755307/019f595c-03fa-76e1-aaa2-d7ee7476e825"
+  },
+  {
+    "id": "019f595c-5aa7-7802-bfb9-3afaaf414f74",
+    "project": "ReHealth AI",
+    "title": "审计低维训练实现",
+    "display_title": "[ReHealth AI] 审计低维训练实现",
+    "cwd": "D:\\rehealthAI",
+    "updated_at": "2026-07-13T02:48:09.833Z",
+    "bundle": "LAPTOP-2GMBRRQA/sessions/desktop/20260714-070700-755307/019f595c-5aa7-7802-bfb9-3afaaf414f74"
+  },
+  {
+    "id": "019f595c-9c0b-7d11-b1c6-77f7875356cc",
+    "project": "ReHealth AI",
+    "title": "审计 PIAS App 调用现状",
+    "display_title": "[ReHealth AI] 审计 PIAS App 调用现状",
+    "cwd": "D:\\rehealthAI",
+    "updated_at": "2026-07-13T02:48:17.152Z",
+    "bundle": "LAPTOP-2GMBRRQA/sessions/desktop/20260714-070700-755307/019f595c-9c0b-7d11-b1c6-77f7875356cc"
+  },
+  {
+    "id": "019f5a18-0183-74f3-8193-89a832ddfa31",
+    "project": "Codex 本机配置",
+    "title": "同步 Codex 会话与工程进度",
+    "display_title": "[Codex 本机配置] 同步 Codex 会话与工程进度",
+    "cwd": "C:\\Users\\kiki",
+    "updated_at": "2026-07-14T07:07:00.177Z",
+    "bundle": "LAPTOP-2GMBRRQA/sessions/desktop/20260714-070700-755307/019f5a18-0183-74f3-8193-89a832ddfa31"
+  },
+  {
+    "id": "019f5b77-6b45-77a2-bc54-2ba9625530ca",
+    "project": "Codex 本机配置",
+    "title": "更新 cc switch API",
+    "display_title": "[Codex 本机配置] 更新 cc switch API",
+    "cwd": "C:\\Users\\kiki",
+    "updated_at": "2026-07-13T12:39:03.450Z",
+    "bundle": "LAPTOP-2GMBRRQA/sessions/desktop/20260714-070700-755307/019f5b77-6b45-77a2-bc54-2ba9625530ca"
+  },
+  {
+    "id": "019f5bd8-48b3-76d1-a587-4716372d26ea",
+    "project": "ReHealth AI",
+    "title": "连接真机并配对智能戒指",
+    "display_title": "[ReHealth AI] 连接真机并配对智能戒指",
+    "cwd": "D:\\rehealthAI",
+    "updated_at": "2026-07-13T17:15:38.723Z",
+    "bundle": "LAPTOP-2GMBRRQA/sessions/desktop/20260714-070700-755307/019f5bd8-48b3-76d1-a587-4716372d26ea"
+  },
+  {
+    "id": "019f5c2b-c6ee-7261-9a57-d2f1d9d53fe6",
+    "project": "ReHealth AI",
+    "title": "接入戒指实时数据",
+    "display_title": "[ReHealth AI] 接入戒指实时数据",
+    "cwd": "D:\\rehealthAI",
+    "updated_at": "2026-07-13T16:17:30.118Z",
+    "bundle": "LAPTOP-2GMBRRQA/sessions/desktop/20260714-070700-755307/019f5c2b-c6ee-7261-9a57-d2f1d9d53fe6"
+  },
+  {
+    "id": "019f5c2b-f9c8-7aa0-b8fa-286b9ebea3fa",
+    "project": "ReHealth AI",
+    "title": "子 Agent：UI 静态数据审计",
+    "display_title": "[ReHealth AI] 子 Agent：UI 静态数据审计",
+    "cwd": "D:\\rehealthAI",
+    "updated_at": "2026-07-13T15:52:56.798Z",
+    "bundle": "LAPTOP-2GMBRRQA/sessions/desktop/20260714-070700-755307/019f5c2b-f9c8-7aa0-b8fa-286b9ebea3fa"
+  },
+  {
+    "id": "019f5c2c-25e2-7ff3-869c-f6151534eae3",
+    "project": "ReHealth AI",
+    "title": "子 Agent：原厂 XAPK 协议审计",
+    "display_title": "[ReHealth AI] 子 Agent：原厂 XAPK 协议审计",
+    "cwd": "D:\\rehealthAI",
+    "updated_at": "2026-07-13T16:04:02.979Z",
+    "bundle": "LAPTOP-2GMBRRQA/sessions/desktop/20260714-070700-755307/019f5c2c-25e2-7ff3-869c-f6151534eae3"
+  },
+  {
+    "id": "019f5c2c-67a5-7c50-b0c4-d706642795ec",
+    "project": "ReHealth AI",
+    "title": "子 Agent：CVD16 功能审计",
+    "display_title": "[ReHealth AI] 子 Agent：CVD16 功能审计",
+    "cwd": "D:\\rehealthAI",
+    "updated_at": "2026-07-13T15:54:35.901Z",
+    "bundle": "LAPTOP-2GMBRRQA/sessions/desktop/20260714-070700-755307/019f5c2c-67a5-7c50-b0c4-d706642795ec"
+  },
+  {
+    "id": "019f5c38-3fff-7d61-a63b-76dc0bb6aa56",
+    "project": "ReHealth AI",
+    "title": "优化 APK 安装与首页问答",
+    "display_title": "[ReHealth AI] 优化 APK 安装与首页问答",
+    "cwd": "D:\\rehealthAI",
+    "updated_at": "2026-07-13T17:04:40.082Z",
+    "bundle": "LAPTOP-2GMBRRQA/sessions/desktop/20260714-070700-755307/019f5c38-3fff-7d61-a63b-76dc0bb6aa56"
+  },
+  {
+    "id": "019f5c38-cac3-7280-98f9-4fb47729fd4d",
+    "project": "ReHealth AI",
+    "title": "子 Agent：安装原厂 XAPK",
+    "display_title": "[ReHealth AI] 子 Agent：安装原厂 XAPK",
+    "cwd": "D:\\rehealthAI",
+    "updated_at": "2026-07-13T16:05:35.073Z",
+    "bundle": "LAPTOP-2GMBRRQA/sessions/desktop/20260714-070700-755307/019f5c38-cac3-7280-98f9-4fb47729fd4d"
+  },
+  {
+    "id": "019f5c39-0dc9-7471-825e-1f2cfb891f82",
+    "project": "ReHealth AI",
+    "title": "子 Agent：修复 APK 启动图标",
+    "display_title": "[ReHealth AI] 子 Agent：修复 APK 启动图标",
+    "cwd": "D:\\rehealthAI",
+    "updated_at": "2026-07-13T16:08:04.423Z",
+    "bundle": "LAPTOP-2GMBRRQA/sessions/desktop/20260714-070700-755307/019f5c39-0dc9-7471-825e-1f2cfb891f82"
+  },
+  {
+    "id": "019f5c39-4e68-7600-b85e-ee21735fc481",
+    "project": "ReHealth AI",
+    "title": "子 Agent：接入本地 GPT 问答",
+    "display_title": "[ReHealth AI] 子 Agent：接入本地 GPT 问答",
+    "cwd": "D:\\rehealthAI",
+    "updated_at": "2026-07-13T16:11:47.941Z",
+    "bundle": "LAPTOP-2GMBRRQA/sessions/desktop/20260714-070700-755307/019f5c39-4e68-7600-b85e-ee21735fc481"
+  },
+  {
+    "id": "019f5c53-dce7-7e40-b53f-7837b27813bd",
+    "project": "Codex 本机配置",
+    "title": "修复 Claude Code 安装",
+    "display_title": "[Codex 本机配置] 修复 Claude Code 安装",
+    "cwd": "C:\\Users\\kiki",
+    "updated_at": "2026-07-13T17:43:10.756Z",
+    "bundle": "LAPTOP-2GMBRRQA/sessions/desktop/20260714-070700-755307/019f5c53-dce7-7e40-b53f-7837b27813bd"
+  }
+]
