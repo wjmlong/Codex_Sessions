@@ -1,0 +1,26 @@
+diff --git a/src/codex_session_toolkit/validation.py b/src/codex_session_toolkit/validation.py
+index cd5e16a..a773169 100644
+--- a/src/codex_session_toolkit/validation.py
++++ b/src/codex_session_toolkit/validation.py
+@@ -104,13 +104,14 @@ def validate_jsonl_file(
+ 
+             if file_kind == "session":
+                 if obj.get("type") == "session_meta":
++                    if not found_session_meta:
++                        payload = obj.get("payload")
++                        payload_session_id = payload.get("id") if isinstance(payload, dict) else None
++                        if expected_session_id and payload_session_id and payload_session_id != expected_session_id:
++                            raise ToolkitError(
++                                f"{file_label} session_meta id does not match expected session id: {payload_session_id}"
++                            )
+                     found_session_meta = True
+-                    payload = obj.get("payload")
+-                    payload_session_id = payload.get("id") if isinstance(payload, dict) else None
+-                    if expected_session_id and payload_session_id and payload_session_id != expected_session_id:
+-                        raise ToolkitError(
+-                            f"{file_label} session_meta id does not match expected session id: {payload_session_id}"
+-                        )
+             elif file_kind == "history":
+                 session_id = obj.get("session_id")
+                 if expected_session_id and session_id != expected_session_id:
+

@@ -1,66 +1,56 @@
 # Codex Sessions
 
-Private, versioned snapshots for moving Codex sessions between Windows devices.
+Codex Desktop session bundles synchronized with [Codex Session Toolkit](https://github.com/lyston11/codex-session-toolkit).
 
-## Security
+The repository currently contains 33 validated Desktop session bundles exported from `LAPTOP-2GMBRRQA`.
 
-The upload script refuses to run unless `wjmlong/Codex_Sessions` is private. Codex sessions can contain source code, prompts, local paths, and secrets pasted into conversations.
+## Source device
 
-Authentication files are never included. Configure Codex and Codex++ API credentials separately on every device.
+Toolkit is installed at:
 
-## Snapshot contents
-
-- `~/.codex/sessions`
-- `~/.codex/archived_sessions`
-- `~/.codex/attachments`
-- `~/.codex/session_index.jsonl`
-- `~/.codex/sqlite/codex-dev.db`
-- `~/.codex/state_5.sqlite`
-- `~/.codex/goals_1.sqlite`
-- `~/.codex/memories_1.sqlite`
-- `~/.codex/thread_history_1.sqlite`, when present
-- `~/.codex/.codex-global-state.json`
-
-SQLite files are copied with SQLite's online backup API. JSONL files are copied only through their last complete line. `auth.json`, `config.toml`, logs, caches, browser state, and sandbox state are excluded.
-
-`codex-dev.db` is only the desktop app's local thread catalog. Complete resumable sessions also require the JSONL rollout files and `state_5.sqlite`, so the scripts back up all three layers.
-
-## First-time setup
-
-1. Change this GitHub repository to private.
-2. Install Codex, Codex++, GitHub CLI, and sign in with `gh auth login` on both devices.
-3. Keep project paths identical on both devices when possible, such as `D:\rehealthAI`.
-
-## Upload from the source device
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\sync-to-github.ps1
+```text
+C:\Users\kiki\codex-session-toolkit
 ```
 
-The script replaces two assets on the `codex-sessions-latest` GitHub Release:
-
-- `codex-sessions-latest.zip`
-- `codex-sessions-latest.sha256`
-
-Using a release asset avoids committing a new binary database version on every sync.
-
-## Restore on the destination device
-
-Install and launch Codex once, then close Codex, ChatGPT, Codex++, and the Codex++ manager completely. Run:
+Export and push the latest sessions:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\restore-from-github.ps1
+cd C:\Users\kiki\codex-session-toolkit
+.\.venv\Scripts\codex-session-toolkit.cmd export-desktop-all --skills-mode skip
+.\.venv\Scripts\codex-session-toolkit.cmd validate-bundles
+.\.venv\Scripts\codex-session-toolkit.cmd sync-github --branch main --message "Sync Codex session bundles"
 ```
 
-The restore script verifies the SHA-256 checksum and archive manifest. Existing managed session data is saved to `~/.codex-session-sync-backups` before replacement.
+GitHub access on this machine uses the Toolkit-local proxy `http://127.0.0.1:7897`. It does not change global Git proxy settings.
 
-Do not work on both devices concurrently. Upload from the device you are leaving, then restore on the device you are moving to.
+## Destination Windows device
 
-## Local commands
+Install Git, Python 3, and GitHub CLI, then clone this repository and run:
 
 ```powershell
-python .\scripts\codex_sessions.py backup --output .\codex-sessions.zip
-python .\scripts\codex_sessions.py verify --archive .\codex-sessions.zip
-python .\scripts\codex_sessions.py restore --archive .\codex-sessions.zip
+powershell -ExecutionPolicy Bypass -File .\scripts\setup-toolkit-windows.ps1
 ```
 
+If GitHub requires the local Clash proxy:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\setup-toolkit-windows.ps1 -ProxyUrl http://127.0.0.1:7897
+```
+
+The setup script installs the Toolkit, applies the nested sub-agent session compatibility patch, connects this repository, pulls the bundles, and validates them.
+
+After setup, close Codex completely and start the Toolkit:
+
+```powershell
+& "$env:USERPROFILE\codex-session-toolkit\codex-session-toolkit.cmd"
+```
+
+Use `Bundle / Transfer -> 导入 Bundle 为会话`, select the desired bundles, and import them with Desktop visibility enabled. For all sessions, filter to the latest Desktop batch, press `a`, then `i`.
+
+When the project path differs between devices, use the Toolkit project-path mapping during import.
+
+## Compatibility patch
+
+Codex sub-agent rollout files can contain their own primary `session_meta` followed by embedded parent-thread `session_meta` records. Toolkit 1.0.0 incorrectly rejected those files because it required every embedded `session_meta` ID to match the child rollout filename.
+
+`patches/toolkit-nested-session-meta.patch` changes validation to require only the primary session metadata to match. The source device uses the same patch, and all 33 bundles pass Toolkit validation.
